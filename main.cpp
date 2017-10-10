@@ -21,10 +21,7 @@ int main()
     {
         for (int row=0; row<12; row++) 
         {
-            if(index<row)
-            {
-               break; 
-            }
+            if(index<row) break;
             else
             {
                 multi[index][row] = multi[0][row] * multi[index][0];       
