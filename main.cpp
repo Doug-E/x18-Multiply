@@ -24,12 +24,14 @@ int main()
         {
             if(index<row)
             {
-            break;
+                break;
             }
-            else{
-            multi[index][row] = multi[0][row] * multi[index][0];       
-            cout<< multi[index][row] << " | "; 
-            row++;}
+            else
+            {
+                multi[index][row] = multi[0][row] * multi[index][0];       
+                cout<< multi[index][row] << " | "; 
+                row++;
+            }
         }
         while(row<12);
         cout<< endl;
