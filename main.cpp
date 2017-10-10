@@ -19,21 +19,18 @@ int main()
     }
     for (int index=0; index<12; index++)
     {
-        int row=0;
-        do 
+        for (int row=0; row<12; row++) 
         {
             if(index<row)
             {
-                break;
+               break; 
             }
             else
             {
                 multi[index][row] = multi[0][row] * multi[index][0];       
                 cout<< multi[index][row] << " | "; 
-                row++;
             }
         }
-        while(row<12);
         cout<< endl;
     }
 return 0;
