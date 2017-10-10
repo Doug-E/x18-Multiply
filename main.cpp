@@ -22,9 +22,14 @@ int main()
         int row=0;
         do 
         {
+            if(index<row)
+            {
+            break;
+            }
+            else{
             multi[index][row] = multi[0][row] * multi[index][0];       
             cout<< multi[index][row] << " | "; 
-            row++;
+            row++;}
         }
         while(row<12);
         cout<< endl;
